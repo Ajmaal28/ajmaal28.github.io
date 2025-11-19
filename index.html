@@ -1,29 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajmaal | My Website</title>
+
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 40px; 
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            text-align: center;
+
+            /* Background colour + optional image */
+            background: 
+                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6') 
+                no-repeat center/cover;
+            min-height: 100vh;
         }
-        h1 { color: #333; }
-        .section {
-            margin-bottom: 20px;
+
+        h1 {
+            margin-top: 60px;
+            font-size: 48px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 32px;
+            color: #ffd54f;
+        }
+
+        p, li {
+            font-size: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Photo styling */
+        .photo-container {
+            margin-top: 30px;
+        }
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffd54f;
+        }
+
+        a {
+            color: #00e5ff;
+            font-size: 22px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
 
-<h1>Hello, I'm Ajmaal!</h1>
+    <h1>Hello, I'm Ajmaal!</h1>
 
-<div class="section">
+    <!-- PHOTO SECTION -->
+    <div class="photo-container">
+        <img class="profile-photo" 
+             src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+             alt="My Photo">
+    </div>
+
     <h2>About Me</h2>
     <p>I am 15 years old and currently in Form 2. I enjoy gaming, reading, coding, football, and learning new things.</p>
-</div>
 
-<div class="section">
     <h2>My Hobbies</h2>
     <ul>
         <li>Gaming</li>
@@ -32,16 +90,9 @@
         <li>Travelling</li>
         <li>Music</li>
     </ul>
-</div>
 
-<div class="section">
     <h2>My Socials</h2>
-    <p>
-        <a href="https://instagram.com/j4ma.l07" target="_blank">
-        Visit my Instagram
-        </a>
-    </p>
-</div>
+    <a href="https://instagram.com/USERNAME" target="_blank">Visit my Instagram</a>
 
 </body>
 </html>
